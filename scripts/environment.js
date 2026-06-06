@@ -4,11 +4,11 @@ export class Environment {
     this.ctx = ctx;
     this.width = width;
     this.height = height;
-    this.snail = new Snail(ctx, width, height, 25);
-    this.worm = new Worm(ctx, width, height, 75);
-    this.butterfly = new Butterfly(ctx, width, height, 25);
-    this.grasshopper = new Grasshopper(ctx, width, height, 50);
-    this.leafbug = new Leafbug(ctx, width, height, 50);
+    this.snail = new Snail(ctx, 25, 30);
+    this.worm = new Worm(ctx, 75, 25);
+    this.butterfly = new Butterfly(ctx, 25, 40);
+    this.grasshopper = new Grasshopper(ctx, 50, 60);
+    this.leafbug = new Leafbug(ctx, 70, 50);
   }
   draw() {
     this.ctx.beginPath();
