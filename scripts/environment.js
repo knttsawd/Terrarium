@@ -1,5 +1,6 @@
 import { Snail, Worm, Butterfly, Grasshopper, Leafbug } from "./creature.js";
 import { isWithin } from "./utils.js";
+import { mouseSpeed } from "./main.js";
 export class Environment {
   constructor(ctx, width, height) {
     this.ctx = ctx;
