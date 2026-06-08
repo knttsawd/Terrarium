@@ -7,7 +7,7 @@ class Creature {
     this.ctx = ctx;
     this.width = imgWidth / scale;
     this.height = imgHeight / scale;
-    this.x = random(0, width) / width;
+    this.x = random(0 + this.width * width, width - this.width * width) / width;
     this.y =
       random(height / 2 - this.height * height, height - this.height * height) /
       height;

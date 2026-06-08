@@ -1,8 +1,12 @@
 import { Environment } from "./environment.js";
-const canvas = document.getElementById("mainCanvas");
-const ctx = canvas.getContext("2d");
 
-const environment = new Environment(ctx, window.innerWidth, window.innerHeight);
+export const canvas = document.getElementById("mainCanvas");
+export const ctx = canvas.getContext("2d");
+export const environment = new Environment(
+  ctx,
+  window.innerWidth,
+  window.innerHeight,
+);
 
 function resize() {
   canvas.height = environment.height = window.innerHeight;
