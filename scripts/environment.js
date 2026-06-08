@@ -25,11 +25,9 @@ export class Environment {
   }
   registerClick(x, y) {
     const clickedObj = this.#identifyTouch(x, y);
-    console.log("clicking", x, y);
   }
   registerDrag(x, y) {
     const clickedObj = this.#identifyTouch(x, y);
-    console.log("dragging", x, y);
   }
   #identifyTouch(x, y) {
     if (isWithin(x, y, this.grasshopper)) return this.grasshopper;
