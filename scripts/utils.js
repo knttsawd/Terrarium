@@ -1,3 +1,5 @@
+export const canvas = document.getElementById("mainCanvas");
+export const ctx = canvas.getContext("2d");
 export function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }

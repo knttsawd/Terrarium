@@ -1,10 +1,11 @@
-import { canvas, ctx, environment } from "./main.js";
+import { canvas, ctx } from "./utils.js";
+import { environment } from "./main.js";
+export let mouseSpeed;
 let originalMouseX;
 let originalMouseY;
 let mouseX;
 let mouseY;
 let dragging = false;
-let mouseSpeed;
 
 function getMouseSpeed() {
   let distance;

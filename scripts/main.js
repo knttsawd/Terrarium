@@ -1,13 +1,10 @@
+import { canvas, ctx } from "./utils.js";
 import { Environment } from "./environment.js";
-
-export const canvas = document.getElementById("mainCanvas");
-export const ctx = canvas.getContext("2d");
 export const environment = new Environment(
   ctx,
   window.innerWidth,
   window.innerHeight,
 );
-
 function resize() {
   canvas.height = environment.height = window.innerHeight;
   canvas.width = environment.width = window.innerWidth;
